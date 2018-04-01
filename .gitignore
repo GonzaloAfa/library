@@ -1,0 +1,5 @@
+Db.sqlite3
+*.pyc
+
+.git
+.c9
