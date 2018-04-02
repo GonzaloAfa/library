@@ -1,3 +1,5 @@
+![alt text](https://travis-ci.org/GonzaloAfa/library.svg?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6f6ea6666fec7869ea66/maintainability)](https://codeclimate.com/github/GonzaloAfa/library/maintainability)
 
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
