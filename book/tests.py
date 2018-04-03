@@ -2,7 +2,6 @@ from django.test import TestCase, Client
 from models import Book
 
 # Create your tests here.
-
 class BookTest(TestCase):
     
     def test_reachable(self):
@@ -29,10 +28,13 @@ class BookTest(TestCase):
     def test_empty_list(self):
         #given
         #when
-        books = Book()
+        book = Book()
         #then
-        self.assertTrue(books.is_empty())
-    
+        self.assertEqual(book.title, '')
+        self.assertEqual(book.author, None)
+        self.assertEqual(book.ISBN, '')
+        self.assertEqual(book.abstract, '')
+
     def test_add_task(self):
         #given
         books = Book()
