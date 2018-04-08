@@ -6,9 +6,8 @@ install:
   - pip install -r requirements.txt
   - pip install -r requirements-test.txt
   - pip install -U codeclimate-test-reporter
-script_before: 
-  - python manage.py makemigrations 
-  - python manage.py migrate 
-script: 
+script_before:
+  - python manage.py test
+script:
   - coverage run ./manage.py test
 after_success: codeclimate-test-reporter
