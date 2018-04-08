@@ -4,5 +4,6 @@ db.sqlite3
 
 .git
 .c9
+.env
 coverage
 */migrations/*
