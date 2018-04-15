@@ -1,0 +1,72 @@
+{
+   "kind": "books#volume",
+   "id": "dVwXSpaCghkC",
+   "etag": "PYFQIEtGNgI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/dVwXSpaCghkC",
+   "volumeInfo": {
+    "title": "Dialectos en transición",
+    "subtitle": "política y subjetividad en el Chile actual",
+    "authors": [
+     "Mauro Salazar",
+     "Miguel Valderrama"
+    ],
+    "publisher": "Lom Ediciones",
+    "publishedDate": "2000-01-01",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "9562823466"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9789562823463"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 282,
+    "printType": "BOOK",
+    "categories": [
+     "Chile"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=dVwXSpaCghkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=dVwXSpaCghkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=dVwXSpaCghkC&pg=PA4&dq=ISBN%3C9789562823463%3E&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=dVwXSpaCghkC&dq=ISBN%3C9789562823463%3E&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Dialectos_en_transici%C3%B3n.html?hl=&id=dVwXSpaCghkC"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=dVwXSpaCghkC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Universidad ARCIS/LOM Ediciones Colección Sin Norte - Serie Punto de Fuga \u003cbr\u003e\nDireccion Editorial Marcela Yentzen Paulo Slachevsky Coordinador Jorge \u003cbr\u003e\nBenítez Dialectos en transición © LOM Ediciones / Universidad ARCIS Primera \u003cbr\u003e\nEdición, diciembre de 2000 \u003cb\u003eI.S.B.N\u003c/b\u003e: 956-282-346-6 Diseño, Composición y \u003cbr\u003e\nDiagramación: Editorial LOM Concha y Toro 23, Santiago Fono: 6885273 Fax: \u003cbr\u003e\n6966388 Impreso en los talleres de LOM Maturana 9, Santiago Fono: 6722236 \u003cbr\u003e\nFax: 6730915&nbsp;..."
+   }
+  },

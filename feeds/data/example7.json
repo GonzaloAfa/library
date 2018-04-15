@@ -1,0 +1,97 @@
+{
+   "kind": "books#volume",
+   "id": "PB3oTWt4C2oC",
+   "etag": "gGm00Bs/ec4",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/PB3oTWt4C2oC",
+   "volumeInfo": {
+    "title": "El país que soñamos",
+    "authors": [
+     "Giorgio Jackson"
+    ],
+    "publisher": "DEBATE",
+    "publishedDate": "2013-04-01",
+    "description": "El pensamiento crítico y valiente de unos de los líderes más importantes del futuro: Giorgio Jackson.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9789568410711"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "9568410716"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 144,
+    "printType": "BOOK",
+    "categories": [
+     "Political Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.19.18.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=PB3oTWt4C2oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=PB3oTWt4C2oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=PB3oTWt4C2oC&pg=PT127&dq=ISBN%3C9789568410711%3E&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=PB3oTWt4C2oC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-PB3oTWt4C2oC"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6900.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 6900.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=PB3oTWt4C2oC&rdid=book-PB3oTWt4C2oC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.9E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.9E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/El_pa%C3%ADs_que_so%C3%B1amos-sample-epub.acsm?id=PB3oTWt4C2oC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/El_pa%C3%ADs_que_so%C3%B1amos-sample-pdf.acsm?id=PB3oTWt4C2oC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=PB3oTWt4C2oC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "... House Mondadori, S.A. Queda rigurosamente prohibida, sin la autorización \u003cbr\u003e\nescrita de los titulares del «Copyright», bajo las sanciones establecidas en las \u003cbr\u003e\nleyes, la reproducción total o parcial de esta obra por cualquier medio o \u003cbr\u003e\nprocedimiento, comprendidos la reprografía y el tratamiento informático, y la \u003cbr\u003e\ndistribución de ella mediante alquiler o préstamo públicos. \u003cb\u003eISBN\u003c/b\u003e: \u003cbr\u003e\n\u003cb\u003e9789568410711\u003c/b\u003e Conversión a formato digital: Newcomlab, S.L. www.\u003cbr\u003e\nmegustaleer.cl Random House Mondadori,&nbsp;..."
+   }
+  },

@@ -1,0 +1,61 @@
+{
+   "kind": "books#volume",
+   "id": "LzZqAAAAMAAJ",
+   "etag": "QZ1pkdKK1NY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/LzZqAAAAMAAJ",
+   "volumeInfo": {
+    "title": "Nicaragua, la estrategia de la victoria",
+    "authors": [
+     "Augusto César Sandino",
+     "Carlos Fonseca Amador"
+    ],
+    "publishedDate": "1980-01-01",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "UTEXAS:059173008392962"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 351,
+    "printType": "BOOK",
+    "categories": [
+     "Nicaragua"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=LzZqAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=LzZqAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=LzZqAAAAMAAJ&q=ISBN%3C9684270682%3E&dq=ISBN%3C9684270682%3E&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=LzZqAAAAMAAJ&dq=ISBN%3C9684270682%3E&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Nicaragua_la_estrategia_de_la_victoria.html?hl=&id=LzZqAAAAMAAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=LzZqAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },

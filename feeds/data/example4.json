@@ -1,0 +1,63 @@
+{
+   "kind": "books#volume",
+   "id": "aMIXh0vmzp4C",
+   "etag": "0LrcGepf1z8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/aMIXh0vmzp4C",
+   "volumeInfo": {
+    "title": "Autonomía, espacio y gestión",
+    "subtitle": "el municipio cercenado",
+    "publisher": "Good Year Books",
+    "publishedDate": "1998-01-01",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "9562821536"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9789562821537"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 159,
+    "printType": "BOOK",
+    "categories": [
+     "Community power"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=aMIXh0vmzp4C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=aMIXh0vmzp4C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=aMIXh0vmzp4C&dq=ISBN%3C9562821536%3E&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=aMIXh0vmzp4C&dq=ISBN%3C9562821536%3E&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Autonom%C3%ADa_espacio_y_gesti%C3%B3n.html?hl=&id=aMIXh0vmzp4C"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=aMIXh0vmzp4C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },

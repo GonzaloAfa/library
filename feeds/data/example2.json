@@ -1,0 +1,65 @@
+{
+   "kind": "books#volume",
+   "id": "Q_w_swEACAAJ",
+   "etag": "keSFXFR3tDc",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Q_w_swEACAAJ",
+   "volumeInfo": {
+    "title": "El tranco del pueblo",
+    "subtitle": "alternativas políticas de la izquierda revolucionaria",
+    "authors": [
+     "Gabriel Salazar Vergara"
+    ],
+    "publishedDate": "2015",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "9569725001"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9789569725005"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 122,
+    "printType": "BOOK",
+    "categories": [
+     "Chile"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=Q_w_swEACAAJ&dq=ISBN%3C9789569725005%3E&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=Q_w_swEACAAJ&dq=ISBN%3C9789569725005%3E&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/El_tranco_del_pueblo.html?hl=&id=Q_w_swEACAAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Q_w_swEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  }

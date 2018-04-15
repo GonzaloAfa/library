@@ -1,0 +1,62 @@
+{
+   "kind": "books#volume",
+   "id": "hjVHXwAACAAJ",
+   "etag": "Cp1g2rYu/cA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/hjVHXwAACAAJ",
+   "volumeInfo": {
+    "title": "Conversaciones con Carlos Altamirano",
+    "subtitle": "memorias críticas",
+    "authors": [
+     "Gabriel Salazar Vergara",
+     "Carlos Altamirano"
+    ],
+    "publishedDate": "2010",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "9568410392"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9789568410391"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 577,
+    "printType": "BOOK",
+    "categories": [
+     "Chile"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=hjVHXwAACAAJ&dq=ISBN%3C9789568410391%3E&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=hjVHXwAACAAJ&dq=ISBN%3C9789568410391%3E&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Conversaciones_con_Carlos_Altamirano.html?hl=&id=hjVHXwAACAAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=hjVHXwAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
