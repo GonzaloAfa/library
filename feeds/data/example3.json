@@ -1,4 +1,7 @@
 {
+  "kind": "books#volumes",
+  "totalItems": 837,
+  "items": [{
    "kind": "books#volume",
    "id": "dVwXSpaCghkC",
    "etag": "PYFQIEtGNgI",
@@ -69,4 +72,4 @@
    "searchInfo": {
     "textSnippet": "Universidad ARCIS/LOM Ediciones Colección Sin Norte - Serie Punto de Fuga \u003cbr\u003e\nDireccion Editorial Marcela Yentzen Paulo Slachevsky Coordinador Jorge \u003cbr\u003e\nBenítez Dialectos en transición © LOM Ediciones / Universidad ARCIS Primera \u003cbr\u003e\nEdición, diciembre de 2000 \u003cb\u003eI.S.B.N\u003c/b\u003e: 956-282-346-6 Diseño, Composición y \u003cbr\u003e\nDiagramación: Editorial LOM Concha y Toro 23, Santiago Fono: 6885273 Fax: \u003cbr\u003e\n6966388 Impreso en los talleres de LOM Maturana 9, Santiago Fono: 6722236 \u003cbr\u003e\nFax: 6730915&nbsp;..."
    }
-  },
+  }]}

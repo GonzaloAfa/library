@@ -1,4 +1,7 @@
 {
+  "kind": "books#volumes",
+  "totalItems": 837,
+  "items": [{
    "kind": "books#volume",
    "id": "Q_w_swEACAAJ",
    "etag": "keSFXFR3tDc",
@@ -63,3 +66,5 @@
     "quoteSharingAllowed": false
    }
   }
+]
+}

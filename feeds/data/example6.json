@@ -1,4 +1,7 @@
 {
+  "kind": "books#volumes",
+  "totalItems": 837,
+  "items": [{
    "kind": "books#volume",
    "id": "LzZqAAAAMAAJ",
    "etag": "QZ1pkdKK1NY",
@@ -58,4 +61,4 @@
     "accessViewStatus": "NONE",
     "quoteSharingAllowed": false
    }
-  },
+  }]}

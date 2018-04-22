@@ -1,4 +1,7 @@
 {
+  "kind": "books#volumes",
+  "totalItems": 837,
+  "items": [{
    "kind": "books#volume",
    "id": "PB3oTWt4C2oC",
    "etag": "gGm00Bs/ec4",
@@ -94,4 +97,4 @@
    "searchInfo": {
     "textSnippet": "... House Mondadori, S.A. Queda rigurosamente prohibida, sin la autorización \u003cbr\u003e\nescrita de los titulares del «Copyright», bajo las sanciones establecidas en las \u003cbr\u003e\nleyes, la reproducción total o parcial de esta obra por cualquier medio o \u003cbr\u003e\nprocedimiento, comprendidos la reprografía y el tratamiento informático, y la \u003cbr\u003e\ndistribución de ella mediante alquiler o préstamo públicos. \u003cb\u003eISBN\u003c/b\u003e: \u003cbr\u003e\n\u003cb\u003e9789568410711\u003c/b\u003e Conversión a formato digital: Newcomlab, S.L. www.\u003cbr\u003e\nmegustaleer.cl Random House Mondadori,&nbsp;..."
    }
-  },
+  }]}
