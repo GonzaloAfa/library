@@ -1,6 +1,6 @@
 language: python
 python:
-  - "2.7"
+  - "3.6"
 cache: pip
 install:
   - pip install -r requirements.txt
@@ -8,4 +8,5 @@ install:
   - pip install -U codeclimate-test-reporter
 script:
   - coverage run ./manage.py test
-after_success: codeclimate-test-reporter
+after_success:
+  - codeclimate-test-reporter
