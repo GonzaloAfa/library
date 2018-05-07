@@ -1,6 +1,5 @@
-from django.shortcuts import HttpResponse
+from django.http import HttpResponse
 
 # Create your views here.
 def books(request):
-    return HttpResponse("<h1>list books</h1>")
-    
+    return HttpResponse('<h1>list books</h1>')

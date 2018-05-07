@@ -1,12 +1,10 @@
 language: python
+node_js:
+  - "10.0"
 python:
   - "3.4"
 cache: pip
 install:
   - pip install -r requirements.txt
-  - pip install -r requirements-test.txt
-  - pip install -U codeclimate-test-reporter
 script:
-  - coverage run ./manage.py test
-after_success:
-  - codeclimate-test-reporter
+  - python manage.py test
