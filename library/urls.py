@@ -18,7 +18,6 @@ from django.conf.urls import url
 
 from django.contrib import admin
 from django.urls import path, include
-from .routers import router
 
 from book import views
 
@@ -26,5 +25,4 @@ from book import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^books', views.books),
-    path('api/', include(router.urls))
 ]
