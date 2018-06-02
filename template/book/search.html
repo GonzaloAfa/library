@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">Agregar libro</li>
+{% endblock %}
+
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Agregar libro</strong>
+          <small></small>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="name">Ingresa el <strong>ISBN</strong></label>
+                <input type="text" class="form-control" id="search" placeholder="El código de 9 o 13 digitos que está atrás de tu libro">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+
+{% endblock %}
