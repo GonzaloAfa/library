@@ -27,7 +27,3 @@ urlpatterns = [
     url(r'^books', book.books),
     url(r'^book/search', book.search),
 ]
-
-urlpatterns += patterns('',
- (r'^static/(?P.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
- )
