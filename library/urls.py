@@ -19,10 +19,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 
-from book import views
+from book import views as book
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^books', views.books),
+    url(r'^books', book.books),
+    url(r'^book/search', book.search),
 ]
