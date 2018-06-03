@@ -5,6 +5,9 @@
   "repository": "https://github.com/GonzaloAfa/library.git",
   "author": "Gonzalo Flores Escobar <gonzaloafa@afachile.cl>",
   "license": "MIT",
+  "engines": {
+    "yarn": "1.6.0"
+  },
   "dependencies": {
     "@coreui/coreui": "2.0.0",
     "@coreui/coreui-plugin-chartjs-custom-tooltips": "1.2.0",
