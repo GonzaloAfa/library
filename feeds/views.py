@@ -20,11 +20,14 @@ def check_field_child(book, field, field_child):
     return (book[field][field_child]) if field in book else ""
 
 def check_isbn(book, isbn):
-    try:
-        return book['industryIdentifiers'][0]['identifier'] == isbn or book['industryIdentifiers'][1]['identifier'] == isbn
-    except IndexError:
-        return False
+    if 'industryIdentifiers' in book:
 
+        try:
+            return book['industryIdentifiers'][0]['identifier'] == isbn or book['industryIdentifiers'][1]['identifier'] == isbn
+        except IndexError:
+            return False
+    else:
+        return False
 
 
 def getDataGoogleBook(config):
