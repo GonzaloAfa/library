@@ -14177,3 +14177,7 @@ body {
   left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.line-box-left {
+  border-right: 1px dashed #333;
+}
