@@ -1,32 +1,107 @@
 {% extends 'base.html' %}
 
 {% block breadcrumb %}
-  <li class="breadcrumb-item active">Agregar libro</li>
+<li class="breadcrumb-item active">Agregar libro</li>
 {% endblock %}
 
-
 {% block content %}
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="card">
-        <div class="card-header">
-          <strong>Agregar libro</strong>
-          <small></small>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="form-group">
-                <label for="name">Ingresa el <strong>ISBN</strong></label>
-                <input type="text" class="form-control" id="search" placeholder="El código de 9 o 13 digitos que está atrás de tu libro">
-              </div>
+<div class="row">
+
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <strong>Buscar libro</strong>
+        <small></small>
+      </div>
+
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="name">Ingresa el <strong>ISBN</strong></label>
+              <form action="/book/search/" method="GET">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="isbn" name="isbn" placeholder="El código de 9 o 13 digitos que está atrás de tu libro">
+                  <span class="input-group-append">
+                  <button type="submit" class="btn btn-primary">Buscar</button>
+                  </span>
+                </div>
+              </form>
             </div>
           </div>
-
         </div>
       </div>
+
     </div>
-    <!--/.col-->
   </div>
+
+  {% if result != '' %}
+
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <strong>Resultado</strong>
+        <small></small>
+      </div>
+
+
+      <div class="card-body">
+
+        {% if result.ISBN == '' %}
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>No hay resultados</h2>
+          </div>
+        </div>
+        {% endif %}
+
+        {% if result.ISBN != '' %}
+          <div class="row">
+
+            <div class="col-3 text-center">
+              <a href="{{result.previewLink}}">
+                <img src="{{result.imagen}}" alt="{{result.title}}" class="img-thumbnail">
+              </a>
+              <br/>
+              <br/>
+              <p>ISBN: {{result.ISBN}}</p>
+            </div>
+
+            <div class="col-7 line-box-left">
+              <h1>{{result.title}} <small>{{result.subtitle}}</small></h1>
+              {% for author in result.authors %}
+                <span class="badge badge-light">{{author}}</span>
+              {% endfor %}
+              {% for category in result.categories %}
+                <span class="badge badge-primary">{{category}}</span>
+              {% endfor %}
+
+              <p class="text-justify">{{result.description}}</p>
+
+
+
+
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-block btn-outline-success"><i class="fa fa-plus" aria-hidden="true"></i> Agregar </button>
+              <br/>
+              <button type="button" class="btn btn-block btn-outline-primary"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+            </div>
+
+
+          </div>
+        {% endif %}
+
+
+
+
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!--/.col-->
+</div>
 
 {% endblock %}
