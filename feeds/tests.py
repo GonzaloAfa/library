@@ -52,8 +52,8 @@ class FeedsTest(TestCase):
         self.assertEqual(result['subtitle'], 'las ciencias cognitivas y la experiencia humana')
         self.assertEqual(result['description'], '')
         self.assertEqual(result['ISBN'], '9788474324198')
-        self.assertEqual(result['previewLink'], 'http://books.google.cl/books?id=fTJJcAAACAAJ&dq=ISBN%3C9788474324198%3E&hl=&cd=1&source=gbs_api')
-        self.assertEqual(result['imagen'], 'http://books.google.com/books/content?id=fTJJcAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api')
+        self.assertEqual(result['previewLink'], 'https://books.google.cl/books?id=fTJJcAAACAAJ&dq=ISBN%3C9788474324198%3E&hl=&cd=1&source=gbs_api')
+        self.assertEqual(result['imagen'], 'https://books.google.com/books/content?id=fTJJcAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api')
         self.assertEqual(result['authors'], ["Francisco J. Varela","Evan Thompson","Eleanor Rosch"])
         self.assertEqual(result['categories'], ["Philosophy"])
 

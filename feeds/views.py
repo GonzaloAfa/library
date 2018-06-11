@@ -14,10 +14,10 @@ def normalize_isbn(config):
     return config
 
 def check_field(book, field):
-    return (book[field]) if field in book else ""
+    return (book[field].replace("http://","https://")) if field in book else ""
 
 def check_field_child(book, field, field_child):
-    return (book[field][field_child]) if field in book else ""
+    return (book[field][field_child].replace("http://","https://")) if field in book else ""
 
 def check_isbn(book, isbn):
     if 'industryIdentifiers' in book:
