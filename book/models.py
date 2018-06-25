@@ -19,6 +19,11 @@ class Book(models.Model):
 
     title = models.CharField(max_length=60)
     subtitle = models.CharField(max_length=60)
+
+    description = models.TextField()
+    previewLink = models.TextField()
+    imagen = models.TextField()
+
     ref_author = models.ForeignKey(Author,models.SET_NULL,blank=True,null=True)
     ref_category = models.ForeignKey(Category,models.SET_NULL,blank=True,null=True,)
     ISBN = models.CharField(max_length=13, primary_key=True)

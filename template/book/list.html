@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block breadcrumb %}
+<li class="breadcrumb-item active">Listado</li>
+{% endblock %} {% block content %}
+
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <strong>Listado de libros</strong>
+      <small></small>
+    </div>
+
+
+    <div class="card-body">
+
+      {% if books|length == 0 %}
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>No hay bookados</h2>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if books|length != 0 %}
+
+
+
+      {% for book in books %}
+      <div class="row line-box-bottom">
+
+        <div class="col-md-1 col-xs-1 text-center">
+          <a href="{{book.previewLink}}">
+                <img src="{{book.imagen}}" alt="{{book.title}}" class="rounded img-thumbnail" height="40px">
+              </a>
+          <br/>
+        </div>
+
+        <div class="col-9 line-box-left">
+          {{book.title}} <small>{{book.subtitle}}</small>{% for author in book.authors %}
+          <span class="badge badge-light">{{author}}</span> {% endfor %} {% for category in book.categories %}
+          <span class="badge badge-primary">{{category}}</span> {% endfor %}
+        </div>
+        <div class="col-2">
+          action
+        </div>
+
+
+      </div>
+      {% endfor %} {% endif %}
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

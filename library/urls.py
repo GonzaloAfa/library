@@ -26,4 +26,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^books', book.books),
     url(r'^book/search', book.search),
+    url(r'^book/list', book.list),
+    url(r'^book/add', book.add),
 ]

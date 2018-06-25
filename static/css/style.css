@@ -14181,3 +14181,7 @@ body {
 .line-box-left {
   border-right: 1px dashed #333;
 }
+
+.line-box-bottom {
+  border-bottom: 1px solid #333;
+}
