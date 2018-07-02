@@ -63,25 +63,27 @@ def parserToBook(config, data):
     }
 
 
-    for item in data['items']:
+    if 'items' in data:
 
-        book = item['volumeInfo']
+        for item in data['items']:
 
-        if check_isbn(book, config['isbn']):
+            book = item['volumeInfo']
 
-            response['ISBN'] = config['isbn']
-            response['title'] = check_field(book, 'title')
-            response['subtitle'] =  check_field(book, 'subtitle')
-            response['description'] =  check_field(book, 'description')
-            response['previewLink'] = check_field(book, 'previewLink')
-            response['imagen'] = check_field_child(book, 'imageLinks', 'thumbnail')
+            if check_isbn(book, config['isbn']):
 
-            if 'authors' in book:
-                response['authors'] = list(map(str, (book['authors'])))
+                response['ISBN'] = config['isbn']
+                response['title'] = check_field(book, 'title')
+                response['subtitle'] =  check_field(book, 'subtitle')
+                response['description'] =  check_field(book, 'description')
+                response['previewLink'] = check_field(book, 'previewLink')
+                response['imagen'] = check_field_child(book, 'imageLinks', 'thumbnail')
 
-            if 'categories' in book:
-                response['categories'] = list(map(str, (book['categories'])))
+                if 'authors' in book:
+                    response['authors'] = list(map(str, (book['authors'])))
 
-            return response
+                if 'categories' in book:
+                    response['categories'] = list(map(str, (book['categories'])))
+
+                return response
 
     return response

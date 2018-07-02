@@ -35,6 +35,27 @@ class FeedsTest(TestCase):
             'categories': [],
         })
 
+    def test_get_isb_not_GBook(self):
+        #given
+        query  = {'isbn': "9788436267419"}
+        response = getDataGoogleBook(query)
+        #when
+        result = parserToBook(query, response['data'])
+
+        #then
+        self.assertEqual(200, response['status_code'])
+        self.assertEqual(result, {
+            'title': '',
+            'subtitle':  '',
+            'description':'',
+            'ISBN':'',
+            'previewLink':'',
+            'imagen': '',
+            'authors':[],
+            'categories': [],
+        })
+
+
     def test_get_data_isbn(self):
         #given
         query  = {'isbn': "9788474324198"}
