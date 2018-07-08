@@ -14,20 +14,18 @@ Including another URLconf
     2. Import the include() function: from django.conf.urls import url, include
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 from django.contrib import admin
 from django.urls import path, include
 
-from book import views as book
+from book import urls as book_urls
 from home import views as home
-
+from book import views as book_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home.index, name='home'),
-    url(r'^books', book.books),
-    url(r'^book/search', book.search, name='search_book'),
-    url(r'^book/list', book.list),
-    url(r'^book/add', book.add),
+    url(r'^book/', include(book_urls)),
+    url(r'^books', book_views.books),
 ]
