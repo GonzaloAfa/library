@@ -20,12 +20,14 @@ from django.contrib import admin
 from django.urls import path, include
 
 from book import views as book
+from home import views as home
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', home.index, name='home'),
     url(r'^books', book.books),
-    url(r'^book/search', book.search),
+    url(r'^book/search', book.search, name='search_book'),
     url(r'^book/list', book.list),
     url(r'^book/add', book.add),
 ]
