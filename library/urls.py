@@ -18,15 +18,15 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path, include
 
-from user import views as user
+from system_auth import views as auth
 from book import urls as book_urls
 from home import views as home
 from book import views as book_views
 
 urlpatterns = [
-    url(r'^$', user.login, name='login'),
-    url(r'^logout$', user.logout_session, name='logout'),
-    url(r'^register$', user.register, name='register'),
+    url(r'^$', auth.login, name='login'),
+    url(r'^logout$', auth.logout_session, name='logout'),
+    url(r'^register$', auth.register, name='register'),
 
 
     url(r'^home/$', home.index, name='home'),
