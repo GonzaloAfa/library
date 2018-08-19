@@ -3,11 +3,14 @@ from django.shortcuts import render
 from feeds.views import getDataGoogleBook, parserToBook
 from book.models import Book
 
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 def books(request):
     return HttpResponse('<h1>list books</h1>')
 
 # Create your views here.
+@login_required(login_url='/')
 def search(request):
 
     data = {'result': ''}
@@ -21,6 +24,7 @@ def search(request):
 
     return render(request, 'book/search.html', data )
 
+@login_required(login_url='/')
 def list(request):
 
     books = Book.objects.all()
@@ -29,6 +33,7 @@ def list(request):
     return render(request, 'book/list.html', data )
 
 
+@login_required(login_url='/')
 def add(request):
     data = {'result': '', 'msg': ''}
 
