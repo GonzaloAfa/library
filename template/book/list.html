@@ -12,40 +12,47 @@
 
     <div class="card-body">
 
-      {% if books|length == 0 %}
+      {% if records.count < 1 %}
       <div class="row">
         <div class="col-12 text-center">
-          <h2>No hay bookados</h2>
+          <h2>No hay libros</h2>
         </div>
       </div>
+
+      {% else %}
+
+        {% for record in records.all %}
+
+
+          <div class="row">
+            <div class="col-md-1 col-xs-1 text-center">
+              <a href="{{record.ref_book.previewLink}}">
+                    <img src="{{record.ref_book.imagen}}" alt="{{record.ref_book.title}}" class="rounded img-thumbnail" height="30px">
+                  </a>
+              <br/>
+            </div>
+
+            <div class="col-9 line-box-left">
+              {{record.ref_book.title}} <small>{{record.ref_book.subtitle}}</small>
+
+              {% for author in record.ref_book.ref_author.all %}
+              <span class="badge badge-light">{{author}}</span>
+              {% endfor %}
+
+              {% for category in record.ref_book.ref_category.all %}
+              <span class="badge badge-primary">{{category}}</span>
+              {% endfor %}
+
+            </div>
+            <div class="col-2">
+              action
+            </div>
+
+
+          </div>
+        {% endfor %}
+
       {% endif %}
-
-      {% if books|length != 0 %}
-
-
-
-      {% for book in books %}
-      <div class="row line-box-bottom">
-
-        <div class="col-md-1 col-xs-1 text-center">
-          <a href="{{book.previewLink}}">
-                <img src="{{book.imagen}}" alt="{{book.title}}" class="rounded img-thumbnail" height="40px">
-              </a>
-          <br/>
-        </div>
-
-        <div class="col-9 line-box-left">
-          {{book.title}} <small>{{book.subtitle}}</small>{% for author in book.authors %}
-          <span class="badge badge-light">{{author}}</span> {% endfor %} {% for category in book.categories %}
-          <span class="badge badge-primary">{{category}}</span> {% endfor %}
-        </div>
-        <div class="col-2">
-          action
-        </div>
-
-
-      </div>
-      {% endfor %} {% endif %}
 
 
 

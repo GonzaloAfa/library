@@ -1,7 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from feeds.views import getDataGoogleBook, parserToBook
+
+# Models
 from book.models import Book,Category,Author
+from record.models import Record
+from system_auth.models import Workspace
 
 from django.contrib.auth.decorators import login_required
 
@@ -82,14 +86,29 @@ def save_book(book):
 @login_required(login_url='/')
 def list(request):
 
-    books = Book.objects.all()
-    data = {'books': books}
+    ref_workspace= Workspace.objects.filter(ref_profile=request.user.profile, active=True).first()
 
-    return render(request, 'book/list.html', data )
+    records = Record.objects.filter(ref_workspace =ref_workspace )
+    print({'records': records})
+
+    return render(request, 'book/list.html', {'records': records} )
 
 
 @login_required(login_url='/')
 def add(request):
-    data = {'result': '', 'msg': ''}
+    data = {'result': ''}
+
+    if 'isbn' in request.POST:
+        isbn = request.POST.get('isbn', "")
+
+        item = Record(
+            status = "add book",
+            ref_book = Book.objects.filter(ISBN=isbn).first(),
+            ref_workspace = Workspace.objects.filter(ref_profile=request.user.profile, active=True).first()
+        )
+        item.save()
+        print("Save record")
+    else:
+        print("else")
 
     return render(request, 'book/search.html', data )

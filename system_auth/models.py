@@ -5,24 +5,28 @@ from django.dispatch import receiver
 
 # Create your models here.
 
-class Workspace(models.Model):
-
-    title = models.CharField(max_length=60)
-    description = models.TextField()
-    ref_user = models.ForeignKey(User,models.SET_NULL,blank=True,null=True)
-
-    def __str__(self):
-        return self.title
-
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    first_name = models.TextField(max_length=500, blank=True)
-    last_name = models.TextField(max_length=500, blank=True)
+    first_name = models.CharField(max_length=120, blank=True)
+    last_name = models.CharField(max_length=120, blank=True)
     bio = models.TextField(max_length=500, blank=True)
     location = models.CharField(max_length=30, blank=True)
     birth_date = models.DateField(null=True, blank=True)
-    workspace_active = models.TextField(max_length=60, blank=True)
+
+    def __str__(self):
+        return self.user.username
+
+
+class Workspace(models.Model):
+
+    title = models.CharField(max_length=60)
+    description = models.TextField(max_length=500, blank=True)
+    ref_profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.ref_profile.user.username + " - " + self.title
 
 
 @receiver(post_save, sender=User)
