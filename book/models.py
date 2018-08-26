@@ -9,6 +9,10 @@ class Author(models.Model):
     def __str__(self):
         return self.name
 
+    # def save(self, *args, **kwargs):
+    #     self.name = self.name.capitalize().strip()
+    #     super(Author, self).save(*args, **kwargs)
+
 class Category(models.Model):
     name = models.CharField(max_length=50)
 
@@ -24,8 +28,8 @@ class Book(models.Model):
     previewLink = models.TextField()
     imagen = models.TextField()
 
-    ref_author = models.ForeignKey(Author,models.SET_NULL,blank=True,null=True)
-    ref_category = models.ForeignKey(Category,models.SET_NULL,blank=True,null=True,)
+    ref_author = models.ManyToManyField(Author)
+    ref_category = models.ManyToManyField(Category)
     ISBN = models.CharField(max_length=13, primary_key=True)
 
     def __str__(self):
