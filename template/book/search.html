@@ -69,17 +69,18 @@
             </div>
 
             <div class="col-7 line-box-left">
-              <h1>{{result.title}} <small>{{result.subtitle}}</small></h1>
-              {% for author in result.authors %}
+              <h1>{{result.title | capfirst }}</h1>
+              <h2><small>{{result.subtitle | capfirst}}</small></h2>
+
+              {% for author in result.ref_author.all %}
                 <span class="badge badge-light">{{author}}</span>
               {% endfor %}
-              {% for category in result.categories %}
-                <span class="badge badge-primary">{{category}}</span>
+
+              {% for category in result.ref_category.all %}
+                <span class="badge badge-primary">{{category | capfirst}}</span>
               {% endfor %}
 
-              <p class="text-justify">{{result.description}}</p>
-
-
+              <p class="text-justify">{{result.description | capfirst}}</p>
 
 
             </div>
