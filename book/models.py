@@ -21,8 +21,8 @@ class Category(models.Model):
 
 class Book(models.Model):
 
-    title = models.CharField(max_length=60)
-    subtitle = models.CharField(max_length=60)
+    title = models.CharField(max_length=120)
+    subtitle = models.CharField(max_length=120)
 
     description = models.TextField()
     previewLink = models.TextField()
