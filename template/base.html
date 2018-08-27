@@ -17,7 +17,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content=" ">
     <meta name="keyword" content=" ">
-    <title>CoreUI Free Bootstrap Admin Template</title>
+    <title>AfaLibrary</title>
     <!-- Icons-->
     <link href='{% static "vendor/flag-icon-css/css/flag-icon.min.css" %}' rel="stylesheet">
     <link href='{% static "vendor/font-awesome/css/font-awesome.min.css" %}' rel="stylesheet">
@@ -127,22 +127,26 @@
             <li class="nav-title">Biblioteca</li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'search_book' %}">
-                <i class="nav-icon icon-magnifier"></i> Buscar libro</a>
+                <i class="nav-icon fa fa-plus"></i> Agregar libro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="nav-icon icon-book-open"></i> Gestionar</a>
+              <a class="nav-link" href="{% url 'list_book' %}">
+                <i class="nav-icon icon-book-open"></i> Mis libros</a>
             </li>
             <li class="nav-title">Prestamos</li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="nav-icon fa fa-users"></i> Nuevo prestamo</a>
+                <i class="nav-icon fa fa-users"></i> Prestar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="nav-icon fa fa-bookmark"></i> Gestionar</a>
+                <i class="nav-icon fa fa-users"></i> Devolver</a>
             </li>
             <li class="nav-title">Configuración</li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon fa fa-user-circle-o"></i> Perfil</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'logout' %}">
                 <i class="fa fa-sign-out"></i> Cerrar sesión</a>
