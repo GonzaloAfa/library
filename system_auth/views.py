@@ -46,7 +46,8 @@ def register(request):
         if password == raw_password:
 
             if authenticate(username=username, password=raw_password) is None:
-                    user = create_user(username, email, password)
+                    create_user(username, email, password)
+                    user = authenticate(username=username, password=password)
                     auth_login(request, user)
                     return redirect('home')
             else:

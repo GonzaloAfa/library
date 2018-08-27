@@ -32,12 +32,12 @@ class Workspace(models.Model):
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
-        Profile.objects.create(user=instance)
+        ref_profile = Profile.objects.create(user=instance)
 
         workspace = Workspace(
             title="Default",
             description="",
-            ref_user=instance
+            ref_profile=ref_profile
         )
         workspace.save()
 
