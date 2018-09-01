@@ -24,7 +24,9 @@ class Workspace(models.Model):
     description = models.TextField(max_length=500, blank=True)
     ref_profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     active = models.BooleanField(default=True)
-
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_updated = models.DateTimeField(auto_now=True)
+    
     def __str__(self):
         return self.ref_profile.user.username + " - " + self.title
 

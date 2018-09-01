@@ -6,10 +6,11 @@ from system_auth.models import Workspace, Profile
 
 class Record(models.Model):
 
+    active = models.BooleanField(default=True)
     status = models.CharField(max_length=30)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
-    ref_owner = models.ForeignKey(Profile, on_delete=models.DO_NOTHING)
+    ref_owner = models.ForeignKey(Profile, on_delete=models.DO_NOTHING, blank = True,null=True)
     ref_book = models.ForeignKey(Book, on_delete=models.DO_NOTHING)
     ref_workspace = models.ForeignKey(Workspace, on_delete=models.DO_NOTHING, blank = True,null=True)
 
