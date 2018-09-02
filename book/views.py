@@ -44,7 +44,7 @@ def search_internal_book(isbn):
             return ''
 
 def save_book(book):
-    print("save_book")
+
     element = Book(
         title = book['title'] ,
         subtitle = book['subtitle'] ,
@@ -102,7 +102,8 @@ def add(request):
         isbn = request.POST.get('isbn', "")
 
         item = Record(
-            status = "add book",
+            status = "created",
+            ref_owner = request.user.profile,
             ref_book = Book.objects.filter(ISBN=isbn).first(),
             ref_workspace = Workspace.objects.filter(ref_profile=request.user.profile, active=True).first()
         )
