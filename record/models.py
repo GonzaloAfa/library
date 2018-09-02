@@ -13,7 +13,8 @@ class StatusRecord(models.Model):
 class Record(models.Model):
 
     active = models.BooleanField(default=True)
-    status = models.ForeignKey(StatusRecord, on_delete=models.DO_NOTHING)
+    status = models.CharField(max_length=30)
+    # status = models.ForeignKey(StatusRecord, on_delete=models.DO_NOTHING)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
     ref_owner = models.ForeignKey(Profile, on_delete=models.DO_NOTHING, blank = True,null=True)
