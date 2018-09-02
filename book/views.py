@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from feeds.views import getDataGoogleBook, parserToBook
+from feeds.antartica import getDataAntartica, parserToBookAntartica
 
 # Models
 from book.models import Book,Category,Author
@@ -30,10 +31,11 @@ def search_internal_book(isbn):
 
     book = Book.objects.filter(ISBN=isbn)
 
+    # do I have that book?
     if len(book) > 0 :
         return book.first()
-
     else:
+        # First find in Google Book
         query  = {'isbn': isbn}
         response = getDataGoogleBook(query)
         data = parserToBook(query, response['data'])
@@ -41,7 +43,15 @@ def search_internal_book(isbn):
         if data['ISBN'] != '':
             return save_book(data)
         else:
+            # if dont exist in Google, then find in Artartica
+            result  = getDataAntartica(query)
+
+            if result['data'] != '':
+                data    = parserToBookAntartica(query, result['data'])
+                return save_book(data)
+
             return ''
+                # Sorry, I dont have that book
 
 def save_book(book):
 
